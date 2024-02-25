@@ -15,28 +15,6 @@ func main() {
 // Versucht, das Spiel ab der Nummer n zu lösen, indem es n an die aktuelle Position
 // schreibt und dann rekursiv mit allen für den Springer erreichbaren Feldern weitermacht.
 func SolveKnights(b board.Board, pos knights.BoardPos, n int) bool {
-	/* Hinweis:
-	 * 1. Rekursionsanker: Bei negativem oder zu großem n ist das Spiel per Definitionem gelöst.
-	 * 2. Rekursionsanker: Bei ungültiger oder bereits vergebener Position (verbotener Zug)
-	 *    ist das Spiel nicht lösbar. Verwenden Sie die Funktion KnightAllowed.
-	 */
-	// TODO
-
-	/* Hinweis:
-	 * n auf das aktuelle Feld schreiben (verwenden Sie fmt.Sprintf).
-	 */
-	// TODO
-
-	/* Hinweis:
-	 * Verwenden Sie KnightNeighbours, um alle Nachbarpositionen aufzuzählen.
-	 * Prüfen Sie in einer Schleife für jede dieser Positionen, ob das Spiel ab dort mit n+1 lösbar ist.
-	 */
-	// TODO
-
-	/* Hinweis:
-	 * Falls das Spiel durch die Schleife über die Nachbarpositionen nicht gelöst werden kann,
-	 * ist es nicht lösbar. Entfernen Sie den aktuellen Schritt wieder aus dem Spielfeld.
-	 */
 	// TODO
 
 	return false

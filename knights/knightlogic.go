@@ -11,10 +11,6 @@ type BoardPos struct {
 // KnightAllowed erwartet ein Spielfeld und eine Position.
 // Liefert true, falls auf dieses Feld ein Springer gesetzt werden darf.
 func KnightAllowed(b board.Board, pos BoardPos) bool {
-	/* Hinweis Es gibt hier keine Einschränkungen,
-	 * außer dass die Position gültig sein muss
-	 * und das Feld nicht besetzt sein darf.
-	 */
 	// TODO
 	return false
 }
@@ -22,10 +18,6 @@ func KnightAllowed(b board.Board, pos BoardPos) bool {
 // KnightNeighbours erwartet eine Spielfeldposition und liefert eine Liste mit
 // allen von dort mittels einer Springer-Bewegung erreichbaren Positionen,
 func KnightNeighbours(pos BoardPos) []BoardPos {
-	/* Hinweis:
-	 * Am einfachsten hartcodieren Sie eine Liste, in der die Positionen
-	 * relativ zu pos.Row und pos.Col gespeichert sind.
-	 */
 	// TODO
 	return []BoardPos{}
 }
