@@ -15,7 +15,8 @@ func KnightAllowed(b board.Board, pos BoardPos) bool {
 	 * außer dass die Position gültig sein muss
 	 * und das Feld nicht besetzt sein darf.
 	 */
-	return pos.Row >= 0 && pos.Row < len(b) && pos.Col >= 0 && pos.Col < len(b[0]) && b[pos.Row][pos.Col] == " "
+	// TODO
+	return false
 }
 
 // KnightNeighbours erwartet eine Spielfeldposition und liefert eine Liste mit
@@ -25,14 +26,6 @@ func KnightNeighbours(pos BoardPos) []BoardPos {
 	 * Am einfachsten hartcodieren Sie eine Liste, in der die Positionen
 	 * relativ zu pos.Row und pos.Col gespeichert sind.
 	 */
-	return []BoardPos{
-		{pos.Row - 1, pos.Col - 2},
-		{pos.Row - 1, pos.Col + 2},
-		{pos.Row + 1, pos.Col - 2},
-		{pos.Row + 1, pos.Col + 2},
-		{pos.Row - 2, pos.Col - 1},
-		{pos.Row - 2, pos.Col + 1},
-		{pos.Row + 2, pos.Col - 1},
-		{pos.Row + 2, pos.Col + 1},
-	}
+	// TODO
+	return []BoardPos{}
 }

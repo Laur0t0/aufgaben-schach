@@ -2,7 +2,6 @@ package main
 
 import (
 	"chesspuzzles/board"
-	"chesspuzzles/queens"
 )
 
 func main() {
@@ -20,24 +19,14 @@ func SolveQueens(b board.Board, row int) bool {
 	/* Hinweis:
 	 * Rekursionsanker: Für ungültige Zeilennummern ist das Spiel per Definitionem gelöst.
 	 */
-	if row < 0 || row >= len(b) {
-		return true
-	}
+	// TODO
 
 	/* Hinweis:
 	* Laufen Sie mit einer Schleife durch die aktuelle Zeile.
 	* Falls ein Zug an der jeweiligen Position erlaubt ist, setzen Sie dort eine Dame
 	* und machen Sie rekursiv in der nächsten Zeile weiter.
 	 */
-	for col := range b[row] {
-		if queens.QueenAllowed(b, row, col) {
-			b[row][col] = "Q"
-			if SolveQueens(b, row+1) {
-				return true
-			}
-			b[row][col] = " "
-		}
-	}
+	// TODO
 
 	/* Hinweis:
 	* Ist das Spiel bis hier (nach der Schleife) nicht gelöst,

@@ -91,7 +91,8 @@ func ColumnContainsQueen(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen ContainsQueen und GetColumn.
 	 */
-	return ContainsQueen(GetColumn(board, col))
+	// TODO
+	return false
 }
 
 // DiagDownRightContainsQueen erwartet ein Spielfeld und eine Spaltennummer col.
@@ -102,7 +103,8 @@ func DiagDownRightContainsQueen(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen ContainsQueen und GetDiagDownRight.
 	 */
-	return ContainsQueen(GetDiagDownRight(board, col))
+	// TODO
+	return false
 }
 
 // DiagUpRightContainsQueen erwartet ein Spielfeld und eine Spaltennummer col.
@@ -113,5 +115,6 @@ func DiagUpRightContainsQueen(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen ContainsQueen und GetDiagUpRight.
 	 */
-	return ContainsQueen(GetDiagUpRight(board, col))
+	// TODO
+	return false
 }
