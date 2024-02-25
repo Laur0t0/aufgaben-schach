@@ -35,6 +35,10 @@ func GetColumn(board Board, col int) []string {
 		return []string{}
 	}
 	result := []string{}
+	/* Hinweis:
+	 * Laufen Sie in einer Schleife durch board und hängen
+	 * Sie jeweils das col-te Element an result an.
+	 */
 	for _, row := range board {
 		result = append(result, row[col])
 	}
@@ -47,6 +51,10 @@ func GetColumn(board Board, col int) []string {
 // Für ungültige Spaltennummern wird ggf. eine Teil-Diagonale geliefert.
 func GetDiagDownRight(board Board, col int) []string {
 	result := []string{}
+	/* Hinweis:
+	 * Laufen Sie in einer Schleife durch board und hängen
+	 * Sie jeweils das col+i-te Element an result an.
+	 */
 	for i := 0; i < len(board); i++ {
 		r, c := i, col+i
 		if r >= 0 && r < len(board) && c >= 0 && c < len(board[0]) {
@@ -61,6 +69,10 @@ func GetDiagDownRight(board Board, col int) []string {
 // und die von dort aus nach rechts oben verläuft.
 // Für ungültige Spaltennummern wird ggf. eine Teil-Diagonale geliefert.
 func GetDiagUpRight(board Board, col int) []string {
+	/* Hinweis:
+	 * Laufen Sie in einer Schleife durch board und hängen
+	 * Sie jeweils das col-i-te Element aus der passenden Zeile an result an.
+	 */
 	result := []string{}
 	for i := 0; i < len(board); i++ {
 		r, c := len(board)-1-i, col+i
