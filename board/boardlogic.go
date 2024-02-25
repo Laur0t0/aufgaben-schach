@@ -7,14 +7,11 @@ func OnlySpaces(list []string) bool {
 	 * Prüfen Sie mit einer Schleife, ob irgend einer der
 	 * Listeneinträge nicht das Leerzeichen (" ") ist.
 	 */
-
-	// begin-solution
 	for _, v := range list {
 		if v != " " {
 			return false
 		}
 	}
-	// end-solution
 	return true
 }
 
@@ -25,14 +22,11 @@ func ContainsQueen(list []string) bool {
 	 * Prüfen Sie mit einer Schleife, ob irgend einer der
 	 * Listeneinträge der String "Q" ist.
 	 */
-
-	// begin-solution
 	for _, v := range list {
 		if v == "Q" {
 			return true
 		}
 	}
-	// end-solution
 	return false
 }
 
@@ -43,10 +37,7 @@ func RowEmpty(board Board, row int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen OnlySpaces und GetRow.
 	 */
-	// begin-solution
 	return OnlySpaces(GetRow(board, row))
-	// end-solution
-	// iftask: return false
 }
 
 // ColumnEmpty erwartet ein Spielfeld und eine Spaltennummer col.
@@ -56,10 +47,7 @@ func ColumnEmpty(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen OnlySpaces und GetColumn.
 	 */
-	// begin-solution
 	return OnlySpaces(GetColumn(board, col))
-	// end-solution
-	// iftask: return false
 }
 
 // DiagDownRightEmpty erwartet ein Spielfeld und eine Spaltennummer col.
@@ -70,10 +58,7 @@ func DiagDownRightEmpty(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen OnlySpaces und GetDiagDownRight.
 	 */
-	// begin-solution
 	return OnlySpaces(GetDiagDownRight(board, col))
-	// end-solution
-	// iftask: return false
 }
 
 // DiagUpRightEmpty erwartet ein Spielfeld und eine Spaltennummer col.
@@ -84,10 +69,7 @@ func DiagUpRightEmpty(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen OnlySpaces und GetDiagUpRight.
 	 */
-	// begin-solution
 	return OnlySpaces(GetDiagUpRight(board, col))
-	// end-solution
-	// iftask: return false
 }
 
 // RowContainsQueen erwartet ein Spielfeld und eine Zeilennummer row.
@@ -98,10 +80,7 @@ func RowContainsQueen(board Board, row int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen ContainsQueen und GetRow.
 	 */
-	// begin-solution
 	return ContainsQueen(GetRow(board, row))
-	// end-solution
-	// iftask: return false
 }
 
 // ColumnContainsQueen erwartet ein Spielfeld und eine Spaltennummer col.
@@ -112,10 +91,7 @@ func ColumnContainsQueen(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen ContainsQueen und GetColumn.
 	 */
-	// begin-solution
 	return ContainsQueen(GetColumn(board, col))
-	// end-solution
-	// iftask: return false
 }
 
 // DiagDownRightContainsQueen erwartet ein Spielfeld und eine Spaltennummer col.
@@ -126,10 +102,7 @@ func DiagDownRightContainsQueen(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen ContainsQueen und GetDiagDownRight.
 	 */
-	// begin-solution
 	return ContainsQueen(GetDiagDownRight(board, col))
-	// end-solution
-	// iftask: return false
 }
 
 // DiagUpRightContainsQueen erwartet ein Spielfeld und eine Spaltennummer col.
@@ -140,8 +113,5 @@ func DiagUpRightContainsQueen(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen ContainsQueen und GetDiagUpRight.
 	 */
-	// begin-solution
 	return ContainsQueen(GetDiagUpRight(board, col))
-	// end-solution
-	// iftask: return false
 }

@@ -21,19 +21,16 @@ func SolveKnights(b board.Board, pos knights.BoardPos, n int) bool {
 	 * 2. Rekursionsanker: Bei ungültiger oder bereits vergebener Position (verbotener Zug)
 	 *    ist das Spiel nicht lösbar. Verwenden Sie die Funktion KnightAllowed.
 	 */
-	// begin-solution
 	if n <= 0 || len(b) == 0 || len(b[0]) == 0 || n > len(b)*len(b[0]) {
 		return true
 	}
 	if !knights.KnightAllowed(b, pos) {
 		return false
 	}
-	// end-solution
 
 	/* Hinweis:
 	 * n auf das aktuelle Feld schreiben (verwenden Sie fmt.Sprintf).
 	 */
-	// begin-solution
 	b[pos.Row][pos.Col] = fmt.Sprintf("%d", n)
 	// end-solution
 
@@ -41,20 +38,16 @@ func SolveKnights(b board.Board, pos knights.BoardPos, n int) bool {
 	 * Verwenden Sie KnightNeighbours, um alle Nachbarpositionen aufzuzählen.
 	 * Prüfen Sie in einer Schleife für jede dieser Positionen, ob das Spiel ab dort mit n+1 lösbar ist.
 	 */
-	// begin-solution
 	for _, p := range knights.KnightNeighbours(pos) {
 		if SolveKnights(b, p, n+1) {
 			return true
 		}
 	}
-	// end-solution
 
 	/* Hinweis:
 	 * Falls das Spiel durch die Schleife über die Nachbarpositionen nicht gelöst werden kann,
 	 * ist es nicht lösbar. Entfernen Sie den aktuellen Schritt wieder aus dem Spielfeld.
 	 */
-	// begin-solution
 	b[pos.Row][pos.Col] = " "
-	// end-solution
 	return false
 }
