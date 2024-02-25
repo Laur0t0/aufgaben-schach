@@ -32,7 +32,6 @@ func SolveKnights(b board.Board, pos knights.BoardPos, n int) bool {
 	 * n auf das aktuelle Feld schreiben (verwenden Sie fmt.Sprintf).
 	 */
 	b[pos.Row][pos.Col] = fmt.Sprintf("%d", n)
-	// end-solution
 
 	/* Hinweis:
 	 * Verwenden Sie KnightNeighbours, um alle Nachbarpositionen aufzuzählen.
