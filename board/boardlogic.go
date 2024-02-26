@@ -3,22 +3,14 @@ package board
 // OnlySpaces erwartet eine Liste von Strings und liefert true,
 // wenn alle Strings Leerzeichen sind, sonst false.
 func OnlySpaces(list []string) bool {
-	for _, v := range list {
-		if v != " " {
-			return false
-		}
-	}
+	// TODO
 	return true
 }
 
 // ContainsQueen erwarte eine Liste von Strings und liefert true,
 // wenn darin mindestens ein "Q" enthalten ist, sonst false.
 func ContainsQueen(list []string) bool {
-	for _, v := range list {
-		if v == "Q" {
-			return true
-		}
-	}
+	// TODO
 	return false
 }
 
@@ -26,14 +18,16 @@ func ContainsQueen(list []string) bool {
 // Liefert true, wenn die row-te Zeile leer ist, sonst false.
 // Liefert true, wenn die Zeile nicht existiert.
 func RowEmpty(board Board, row int) bool {
-	return OnlySpaces(GetRow(board, row))
+	// TODO
+	return false
 }
 
 // ColumnEmpty erwartet ein Spielfeld und eine Spaltennummer col.
 // Liefert true, wenn die col-te Spalte leer ist, sonst false.
 // Liefert true, wenn die Spalte nicht existiert.
 func ColumnEmpty(board Board, col int) bool {
-	return OnlySpaces(GetColumn(board, col))
+	// TODO
+	return false
 }
 
 // DiagDownRightEmpty erwartet ein Spielfeld und eine Spaltennummer col.
@@ -41,7 +35,8 @@ func ColumnEmpty(board Board, col int) bool {
 // nur Leerzeichen enthält.
 // Bei ungültigen Spaltennummern wird ggf. eine Teil-Diagonale betrachtet.
 func DiagDownRightEmpty(board Board, col int) bool {
-	return OnlySpaces(GetDiagDownRight(board, col))
+	// TODO
+	return false
 }
 
 // DiagUpRightEmpty erwartet ein Spielfeld und eine Spaltennummer col.
@@ -49,7 +44,8 @@ func DiagDownRightEmpty(board Board, col int) bool {
 // nur Leerzeichen enthält.
 // Bei ungültigen Spaltennummern wird ggf. eine Teil-Diagonale betrachtet.
 func DiagUpRightEmpty(board Board, col int) bool {
-	return OnlySpaces(GetDiagUpRight(board, col))
+	// TODO
+	return false
 }
 
 // RowContainsQueen erwartet ein Spielfeld und eine Zeilennummer row.
@@ -57,7 +53,8 @@ func DiagUpRightEmpty(board Board, col int) bool {
 // sonst false.
 // Liefert false, falls die Zeile nicht existiert.
 func RowContainsQueen(board Board, row int) bool {
-	return ContainsQueen(GetRow(board, row))
+	// TODO
+	return false
 }
 
 // ColumnContainsQueen erwartet ein Spielfeld und eine Spaltennummer col.
