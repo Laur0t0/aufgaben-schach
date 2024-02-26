@@ -7,11 +7,7 @@ func OnlySpaces(list []string) bool {
 	 * Prüfen Sie mit einer Schleife, ob irgend einer der
 	 * Listeneinträge nicht das Leerzeichen (" ") ist.
 	 */
-	for _, v := range list {
-		if v != " " {
-			return false
-		}
-	}
+	// TODO
 	return true
 }
 
@@ -22,11 +18,7 @@ func ContainsQueen(list []string) bool {
 	 * Prüfen Sie mit einer Schleife, ob irgend einer der
 	 * Listeneinträge der String "Q" ist.
 	 */
-	for _, v := range list {
-		if v == "Q" {
-			return true
-		}
-	}
+	// TODO
 	return false
 }
 
@@ -37,7 +29,8 @@ func RowEmpty(board Board, row int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen OnlySpaces und GetRow.
 	 */
-	return OnlySpaces(GetRow(board, row))
+	// TODO
+	return false
 }
 
 // ColumnEmpty erwartet ein Spielfeld und eine Spaltennummer col.
@@ -47,7 +40,8 @@ func ColumnEmpty(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen OnlySpaces und GetColumn.
 	 */
-	return OnlySpaces(GetColumn(board, col))
+	// TODO
+	return false
 }
 
 // DiagDownRightEmpty erwartet ein Spielfeld und eine Spaltennummer col.
@@ -58,7 +52,8 @@ func DiagDownRightEmpty(board Board, col int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen OnlySpaces und GetDiagDownRight.
 	 */
-	return OnlySpaces(GetDiagDownRight(board, col))
+	// TODO
+	return false
 }
 
 // DiagUpRightEmpty erwartet ein Spielfeld und eine Spaltennummer col.
@@ -80,7 +75,8 @@ func RowContainsQueen(board Board, row int) bool {
 	/* Hinweis:
 	 * Verwenden Sie die Funktionen ContainsQueen und GetRow.
 	 */
-	return ContainsQueen(GetRow(board, row))
+	// TODO
+	return false
 }
 
 // ColumnContainsQueen erwartet ein Spielfeld und eine Spaltennummer col.
