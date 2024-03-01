@@ -8,3 +8,7 @@ func QueenAllowed(b board.Board, row, col int) bool {
 	// TODO
 	return false
 }
+func HalloCorvin()bool{
+	// TODO
+	return false
+}
