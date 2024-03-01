@@ -27,7 +27,7 @@ func SolveKnights(b board.Board, pos knights.BoardPos, n int) bool {
 		return false
 	}
 
-	//n muss auf das aktuelle Feld geschrieben werden
+	//n muss auf das aktuelle Feld geschrieben werden1
 	b[pos.Row][pos.Col] = fmt.Sprintf("%d", n)
 
 	//Prüfen für jede Nachbarposition (mit knightNeighbours), ob Spiel ab dort mit n+1 zu lösen geht
