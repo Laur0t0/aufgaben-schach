@@ -29,4 +29,3 @@ func KnightNeighbours(pos BoardPos) []BoardPos {
 		{pos.Row + 2, pos.Col + 1},
 	}
 }
-// Hallo Corvin
