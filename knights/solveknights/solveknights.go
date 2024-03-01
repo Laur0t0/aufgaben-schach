@@ -16,8 +16,9 @@ func main() {
 // Versucht, das Spiel ab der Nummer n zu lösen, indem es n an die aktuelle Position
 // schreibt und dann rekursiv mit allen für den Springer erreichbaren Feldern weitermacht.
 func SolveKnights(b board.Board, pos knights.BoardPos, n int) bool {
+
 	// 1. Wenn n = negativ oder zu groß: Spiel per Definitionem gelöst.
-	// 2. Wenn Position ungültig oder bereits vergeben (verbotener Zug): Spiel nicht lösbar.
+	// 2. Wenn Position ungültig oder bereits vergeben (verbotener Zug): Spiel nicht lösbar -> also Zug ungültig
 
 	if n <= 0 || len(b) == 0 || len(b[0]) == 0 || n > len(b)*len(b[0]) {
 		return true
@@ -28,9 +29,11 @@ func SolveKnights(b board.Board, pos knights.BoardPos, n int) bool {
 	}
 
 	//n muss auf das aktuelle Feld geschrieben werden1
+
 	b[pos.Row][pos.Col] = fmt.Sprintf("%d", n)
 
 	//Prüfen für jede Nachbarposition (mit knightNeighbours), ob Spiel ab dort mit n+1 zu lösen geht
+
 	for _, p := range knights.KnightNeighbours(pos) {
 		if SolveKnights(b, p, n+1) {
 			return true
